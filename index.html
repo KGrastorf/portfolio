@@ -2,38 +2,32 @@
 <html ng-app="kevApp">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Kevin Grastorf Web Developer">
-    <meta property="og:image" content="http://kevingrastorf.com/images/Cover5b.jpg">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Julius+Sans+One|Josefin+Slab|Lato|Raleway|Poiret+One" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/Circles 7.ico" type="image/x-icon">
-    <title>Kevin Grastorf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Kevin Grastorf Web Developer">
+  <meta property="og:image" content="http://kevingrastorf.com/images/Cover5b.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto|Julius+Sans+One|Josefin+Slab|Lato|Raleway|Poiret+One" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/Circles 7.ico" type="image/x-icon">
+  <title>Kevin Grastorf</title>
 </head>
 
 <body ng-controller="mainCtrl">
 
-    <header class="nav-up">
+  <header class="nav-up">
 
-        <div class="navbar">
-            <ul class="nav flexnav" id="top">
-                <li class="center"><a ui-sref="welcome" class="name">Kevin Grastorf</a></li>
-
-                <!-- <li><a ui-sref="school" class="navbut" id="top">Code School</a></li> -->
-                <li class="navbut"><a ui-sref="skills"  id="top">Additional Skills</a></li>
-                <!-- <li><a ui-sref="projects" class="navbut" id="top">My Projects</a></li> -->
-                <!-- <li><a ui-sref="story" class="navbut" id="top">My Story</a></li> -->
-
-            </ul>
-        </div>
-    </header>
-    <ui-view autoscroll="true"></ui-view>
-    <footer class="pop">
-        <a href="mailto:kevin.grastorf@gmail.com" class="links">Email</a>
-        <a href="tel:4065797588" class="links">Call/Text</a>
-        <!-- <a href="https://www.linkedin.com/in/kevin-grastorf-97aa196" target="_blank" class="links">LinkedIn</a> -->
+    <div class="navbar">
+      <ul class="nav flexnav" id="top">
+        <li class="center"><a ui-sref="welcome" class="name">Kevin Grastorf</a></li>
+        <li class="navbut"><a ui-sref="skills" id="top">Additional Skills</a></li>
+      </ul>
+    </div>
+  </header>
+  <ui-view autoscroll="true"></ui-view>
+  <footer class="pop">
+    <a href="mailto:kevin.grastorf@gmail.com" class="links">Email</a>
+    <a href="tel:4065797588" class="links">Call/Text</a>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
