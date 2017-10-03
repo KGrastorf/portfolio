@@ -69,13 +69,36 @@ angular.module("kevApp").controller("mainCtrl", function($scope, mainServ, $stat
   });
 
 
+  var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+
   // $(document).ready(function() {
-  //   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
-  //     $('.slide-in').addClass('active');
-  //     $('.slide-in-two').addClass('active');
-  //     $('.slide-in-three').addClass('active');
-  //     $('.slide-in-four').addClass('active');
-  //     $('.slide-in-five').addClass('active');
+  //   if( isMobile.any() ){
+  //     $('.slide-in').addClass('active'),
+  //     $('.slide-in-two').addClass('active'),
+  //     $('.slide-in-three').addClass('active'),
+  //     $('.slide-in-four').addClass('active'),
+  //     $('.slide-in-five').addClass('active'),
+  //     console.log("I love myself!");
   //
   //   } else {
 

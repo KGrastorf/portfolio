@@ -132,7 +132,6 @@ header {
   /*border: 3px solid orange;*/
   z-index: 1;
   position: fixed;
-  box-shadow: 0 20px 155px #dadada;
   transition: top 0.2s ease-in-out;
 }
 
@@ -386,11 +385,9 @@ footer {
   height: auto;
   border: 3px solid black;
   image-orientation: contain;
-  box-shadow: 3px 3px 55px white;
 }
 
 iframe {
-  box-shadow: 3px 3px 55px white;
 }
 
 .pic2 {
@@ -404,7 +401,6 @@ width: 50vw;
 height: auto;
 
 image-orientation: contain;
-box-shadow: 3px 3px 55px white;
 }
 
 .space {
@@ -426,6 +422,11 @@ box-shadow: 3px 3px 55px white;
   width: 100vw;
 }
 
+.space7 {
+  height: 10vh;
+  width: 100vw;
+}
+
 .wd {
   width: 100vw;
   height: auto;
@@ -435,7 +436,6 @@ box-shadow: 3px 3px 55px white;
   text-align: center;
   font-family:  'Poiret One', cursive;
   color: orange;
-  text-shadow: 1px 1px black;
   font-size: 7vw;
 }
 
@@ -464,7 +464,6 @@ box-shadow: 3px 3px 55px white;
   border: 5px solid black;
   /*border-radius: 25%;*/
   margin-top: 5vh;
-  box-shadow: 2px 2px 55px white;
 }
 
 .full {
@@ -478,7 +477,6 @@ box-shadow: 3px 3px 55px white;
 
 .text1 {
   color: black;
-  /*text-shadow: 1px 1px black;*/
   margin: 0 2.5vw;
   font-size: 4.5vw;
   font-family:  'Poiret One', cursive;
@@ -486,7 +484,6 @@ box-shadow: 3px 3px 55px white;
 
 .text1a {
   color: black;
-  /*text-shadow: 1px 1px black;*/
   margin: 0 4.5vw;
   font-size: 4.5vw;
   font-family:  'Poiret One', cursive;
@@ -494,7 +491,6 @@ box-shadow: 3px 3px 55px white;
 
 .text2 {
   color: black;
-  /*text-shadow: 1px 1px black;*/
   margin: 0 2.5vw;
   padding: 2vw;
   font-size: 2vw;
@@ -503,7 +499,6 @@ box-shadow: 3px 3px 55px white;
 
 .text3 {
   color: black;
-  /*text-shadow: 1px 1px black;*/
   margin: 3vw 2.5vw;
   padding: 2vw;
   font-size: 2vw;
@@ -527,7 +522,6 @@ box-shadow: 3px 3px 55px white;
   width: 60vw;
   height: auto;
   border: 3px solid black;
-  box-shadow: 2px 2px 55px gray;
 }
 
 .color1 {
@@ -546,7 +540,7 @@ background-color: #fff;
 .class {
   text-align: center;
   color: white;
-  text-shadow: 1px 1px black;
+
 }
 
 .fontq {
@@ -682,7 +676,6 @@ button {
   border: 5px solid black;
   /*border-radius: 25%;*/
   margin-top: 5vh;
-  box-shadow: 2px 2px 55px white;
 }
 
 
@@ -691,8 +684,9 @@ button {
   color: black;
   width: 20vw;
   float: left;
-  font-size: .5em;
+  font-size: .8em;
   padding: 1vh 0 0 0;
+  margin-right: 2vw;
   text-align: right;
 }
 
@@ -706,7 +700,115 @@ button {
   /*border-left: 1px solid rgb(214, 214, 214);*/
 }
 
+.align-left {
+  float:none;
+  margin-right:0;
+}
 
+.align-right {
+  float:nonenone;
+  margin-left:0;
+}
+
+.align-right-three {
+  float:none;
+  margin-left:0;
+}
+
+.align-left-four {
+  float:none;
+  margin-right:0;
+}
+
+.align-right-five {
+  float:none;
+  margin-left:0;
+}
+
+.slide-in {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-two {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-three {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-four {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-five {
+  opacity:1;
+  transition:all 0;
+}
+
+.align-right.slide-in {
+  transform:translateX(0) scale(1);
+}
+
+.align-left.slide-in-two {
+  transform:translateX(0) scale(1);
+}
+
+.align-left-four.slide-in-four {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-three.slide-in-three {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-five.slide-in-five{
+  transform:translateX(0%) scale(1);
+}
+
+.text1 {
+  color: black;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  text-align: center;
+  font-family:  'Poiret One', cursive;
+}
+
+.text1a {
+  color: black;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  text-align: center;
+  font-family:  'Poiret One', cursive;
+}
+
+.text2 {
+  color: black;
+  margin: 0 auto;
+  padding: 2vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
+}
+
+.text3 {
+  color: black;
+  margin: 0 auto;
+  padding: 2vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
+}
+
+.talk-to-me {
+  text-align: center;
+  margin: auto 0;
+  padding: 0 10vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
+}
 
 }
 
@@ -773,7 +875,6 @@ button {
   border: 5px solid black;
   /*border-radius: 25%;*/
   margin-top: 5vh;
-  box-shadow: 2px 2px 55px white;
 }
 
 
@@ -782,8 +883,9 @@ button {
   color: black;
   width: 20vw;
   float: left;
-  font-size: .5em;
+  font-size: .8em;
   padding: 1vh 0 0 0vw;
+    margin-right: 2vw;
   /*border-left: 1px solid rgb(214, 214, 214);*/
 }
 
@@ -801,6 +903,83 @@ button {
   font-size: 4vw;
 }
 
+.align-left {
+  float:none;
+  margin-right:0;
+}
+
+.align-right {
+  float:nonenone;
+  margin-left:0;
+}
+
+.align-right-three {
+  float:none;
+  margin-left:0;
+}
+
+.align-left-four {
+  float:none;
+  margin-right:0;
+}
+
+.align-right-five {
+  float:none;
+  margin-left:0;
+}
+
+.slide-in {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-two {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-three {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-four {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-five {
+  opacity:1;
+  transition:all 0;
+}
+
+.align-right.slide-in {
+  transform:translateX(0) scale(1);
+}
+
+.align-left.slide-in-two {
+  transform:translateX(0) scale(1);
+}
+
+.align-left-four.slide-in-four {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-three.slide-in-three {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-five.slide-in-five{
+  transform:translateX(0%) scale(1);
+}
+
+.talk-to-me {
+  text-align: center;
+  margin: auto 0;
+  padding: 0 10vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
+}
 }
 
 @media screen and (max-width: 900px) {
@@ -864,7 +1043,6 @@ button {
   border: 5px solid black;
   /*border-radius: 25%;*/
   margin-top: 5vh;
-  box-shadow: 2px 2px 55px white;
 }
 
 .navbut {
@@ -872,8 +1050,9 @@ button {
   color: black;
   width: 20vw;
   float: left;
-  font-size: .5em;
+  font-size: .8em;
   padding: 1vh 0 0 0vw;
+    margin-right: 2vw;
   /*border-left: 1px solid rgb(214, 214, 214);*/
 
 }
@@ -894,6 +1073,84 @@ button {
 
 .fontq3 {
   font-size: 3.3vw;
+}
+
+.align-left {
+  float:none;
+  margin-right:0;
+}
+
+.align-right {
+  float:nonenone;
+  margin-left:0;
+}
+
+.align-right-three {
+  float:none;
+  margin-left:0;
+}
+
+.align-left-four {
+  float:none;
+  margin-right:0;
+}
+
+.align-right-five {
+  float:none;
+  margin-left:0;
+}
+
+.slide-in {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-two {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-three {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-four {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-five {
+  opacity:1;
+  transition:all 0;
+}
+
+.align-right.slide-in {
+  transform:translateX(0) scale(1);
+}
+
+.align-left.slide-in-two {
+  transform:translateX(0) scale(1);
+}
+
+.align-left-four.slide-in-four {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-three.slide-in-three {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-five.slide-in-five{
+  transform:translateX(0%) scale(1);
+}
+
+.talk-to-me {
+  text-align: center;
+  margin: auto 0;
+  padding: 0 10vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
 }
 
 }
@@ -960,7 +1217,6 @@ button {
   border: 5px solid black;
   /*border-radius: 25%;*/
   margin-top: 5vh;
-  box-shadow: 2px 2px 55px white;
 }
 
 .navbut {
@@ -968,8 +1224,9 @@ button {
   color: black;
   width: 20vw;
   float: left;
-  font-size: .5em;
+  font-size: .8em;
   padding: 1vh 0 0 0;
+    margin-right: 2vw;
   /*border: 1px solid rgb(214, 214, 214);*/
 }
 
@@ -996,6 +1253,85 @@ button {
 .fontq3 {
   font-size: 5vw;
 }
+
+.align-left {
+  float:none;
+  margin-right:0;
+}
+
+.align-right {
+  float:nonenone;
+  margin-left:0;
+}
+
+.align-right-three {
+  float:none;
+  margin-left:0;
+}
+
+.align-left-four {
+  float:none;
+  margin-right:0;
+}
+
+.align-right-five {
+  float:none;
+  margin-left:0;
+}
+
+.slide-in {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-two {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-three {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-four {
+  opacity:1;
+  transition:all 0;
+}
+
+.slide-in-five {
+  opacity:1;
+  transition:all 0;
+}
+
+.align-right.slide-in {
+  transform:translateX(0) scale(1);
+}
+
+.align-left.slide-in-two {
+  transform:translateX(0) scale(1);
+}
+
+.align-left-four.slide-in-four {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-three.slide-in-three {
+  transform:translateX(0) scale(1);
+}
+
+.align-right-five.slide-in-five{
+  transform:translateX(0%) scale(1);
+}
+
+.talk-to-me {
+  text-align: center;
+  margin: auto 0;
+  padding: 0 10vw;
+  font-size: 3vw;
+  font-family:  'Poiret One', cursive;
+}
+
 }
 
 .bounce {
