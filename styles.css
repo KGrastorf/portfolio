@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
 }
 
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -40,6 +41,11 @@ img.arw {
 }
 
 .slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.slide-in1 {
   opacity: 0;
   transition: all .5s;
 }
@@ -85,6 +91,11 @@ img.arw {
 }
 
 .slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.slide-in.active1 {
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
@@ -372,6 +383,13 @@ footer {
   image-orientation: contain;
 }
 
+.pic5 {
+  width: 50vw;
+  height: auto;
+  /*border: 3px solid black;*/
+  image-orientation: contain;
+}
+
 iframe {}
 
 .pic2 {
@@ -562,6 +580,13 @@ blockquote {
   image-orientation: contain;
 }
 
+#player {
+  width: 50vw;
+  height: 33vw;
+  border: 3px solid black;
+  image-orientation: contain;
+}
+
 .arrow {
   position: fixed;
   bottom: 0;
@@ -621,18 +646,68 @@ button {
   .nav-up {
     top: 0h; // same as header height. use variables in LESS/SASS
   }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 40% 40% 10%;
+  }
   .space {
     display: none;
   }
   .spacer {
     display: none;
   }
-  .blurb2 {
-    width: 45vw;
+
+  .blurb {
+    /*width: 45vw;
     height: auto;
     padding: 2vh 0;
-    margin: auto 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
   }
+
+  .blurb2 {
+    /*width: 45vw;
+    height: auto;
+    padding: 2vh 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    padding: 0 0 5vh 0;
+  }
+
+  .site {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pic {
+    width: 80vw;
+    height: auto;
+    border: 3px solid black;
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
+  .pic5 {
+    width: 80vw;
+    height: auto;
+    /*border: 3px solid black;*/
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
   .skill-title {
     margin: 0;
     padding: 2vh 1vh 1vh 1vh;
@@ -670,23 +745,23 @@ button {
   }
   .align-left {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right {
-    float: nonenone;
-    margin-left: 0;
+    float: none;
+    margin: 0 auto;
   }
   .align-right-three {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-left-four {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right-five {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .slide-in {
     opacity: 1;
@@ -751,12 +826,32 @@ button {
     font-size: 3vw;
     font-family: 'Poiret One', cursive;
   }
+
+.grid-talk {
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 10% 80% 10%;
+}
+
   .talk-to-me {
+    grid-column: 2/3;
+    grid-row: 2/3;
     text-align: center;
     margin: auto 0;
-    padding: 0 10vw;
+    padding:10vw;
     font-size: 3vw;
     font-family: 'Poiret One', cursive;
+    background-color: white;
+  }
+
+  .space5 {
+    background-color: white;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  .space7 {
+    height: 5vh;
+    width: 100vw;
   }
 }
 
@@ -786,18 +881,67 @@ button {
   .nav-up {
     top: 0; // same as header height. use variables in LESS/SASS
   }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
   .space {
     display: none;
   }
   .spacer {
     display: none;
   }
-  .blurb2 {
-    width: 45vw;
+  .blurb {
+    /*width: 45vw;
     height: auto;
     padding: 2vh 0;
-    margin: auto 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
   }
+
+  .blurb2 {
+    /*width: 45vw;
+    height: auto;
+    padding: 2vh 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    padding: 0 0 5vh 0;
+  }
+
+  .site {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pic {
+    width: 80vw;
+    height: auto;
+    border: 3px solid black;
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
+  .pic5 {
+    width: 80vw;
+    height: auto;
+    /*border: 3px solid black;*/
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
   .skill-title {
     margin: 0;
     padding: 2vh 1vh 1vh 1vh;
@@ -837,23 +981,23 @@ button {
   }
   .align-left {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right {
     float: nonenone;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-right-three {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-left-four {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right-five {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .slide-in {
     opacity: 1;
@@ -890,12 +1034,31 @@ button {
   .align-right-five.slide-in-five {
     transform: translateX(0%) scale(1);
   }
+  .grid-talk {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
   .talk-to-me {
+    grid-column: 2/3;
+    grid-row: 2/3;
     text-align: center;
     margin: auto 0;
-    padding: 0 10vw;
+    padding:10vw;
     font-size: 3vw;
     font-family: 'Poiret One', cursive;
+    background-color: white;
+  }
+
+  .space5 {
+    background-color: white;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  .space7 {
+    height: 5vh;
+    width: 100vw;
   }
 }
 
@@ -925,18 +1088,67 @@ button {
   .nav-up {
     top: 0; // same as header height. use variables in LESS/SASS
   }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
   .space {
     display: none;
   }
   .spacer {
     display: none;
   }
-  .blurb2 {
-    width: 45vw;
+  .blurb {
+    /*width: 45vw;
     height: auto;
     padding: 2vh 0;
-    margin: auto 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
   }
+
+  .blurb2 {
+    /*width: 45vw;
+    height: auto;
+    padding: 2vh 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    padding: 0 0 5vh 0;
+  }
+
+  .site {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pic {
+    width: 80vw;
+    height: auto;
+    border: 3px solid black;
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
+  .pic5 {
+    width: 80vw;
+    height: auto;
+    /*border: 3px solid black;*/
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
   .skill-title {
     margin: 0;
     padding: 2vh 1vh 1vh 1vh;
@@ -979,23 +1191,23 @@ button {
   }
   .align-left {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right {
     float: nonenone;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-right-three {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-left-four {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right-five {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .slide-in {
     opacity: 1;
@@ -1032,12 +1244,31 @@ button {
   .align-right-five.slide-in-five {
     transform: translateX(0%) scale(1);
   }
+  .grid-talk {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
   .talk-to-me {
+    grid-column: 2/3;
+    grid-row: 2/3;
     text-align: center;
     margin: auto 0;
-    padding: 0 10vw;
+    padding:10vw;
     font-size: 3vw;
     font-family: 'Poiret One', cursive;
+    background-color: white;
+  }
+
+  .space5 {
+    background-color: white;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  .space7 {
+    height: 5vh;
+    width: 100vw;
   }
 }
 
@@ -1067,18 +1298,69 @@ button {
   .nav-up {
     top: 0; // same as header height. use variables in LESS/SASS
   }
+
+  .flex {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
   .space {
     display: none;
   }
   .spacer {
     display: none;
   }
-  .blurb2 {
-    width: 45vw;
+
+  .blurb {
+    /*width: 45vw;
     height: auto;
     padding: 2vh 0;
-    margin: auto 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
   }
+
+  .blurb2 {
+    /*width: 45vw;
+    height: auto;
+    padding: 2vh 0;
+    margin: auto 0;*/
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+    padding: 0 0 5vh 0;
+  }
+
+  .site {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pic {
+    width: 80vw;
+    height: auto;
+    border: 3px solid black;
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
+  .pic5 {
+    width: 80vw;
+    height: auto;
+    /*border: 3px solid black;*/
+    image-orientation: contain;
+    margin: 0 auto;
+  }
+
   .skill-title {
     margin: 0;
     1vh
@@ -1126,23 +1408,23 @@ button {
   }
   .align-left {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right {
     float: nonenone;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-right-three {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .align-left-four {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .align-right-five {
     float: none;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .slide-in {
     opacity: 1;
@@ -1179,12 +1461,20 @@ button {
   .align-right-five.slide-in-five {
     transform: translateX(0%) scale(1);
   }
+  .grid-talk {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
   .talk-to-me {
+    grid-column: 2/3;
+    grid-row: 2/3;
     text-align: center;
     margin: auto 0;
-    padding: 0 10vw;
+    padding:10vw;
     font-size: 3vw;
     font-family: 'Poiret One', cursive;
+    background-color: white;
   }
 }
 
@@ -1256,5 +1546,16 @@ button {
   }
   60% {
     transform: translateY(-15px);
+  }
+
+  .space5 {
+    background-color: white;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  .space7 {
+    height: 5vh;
+    width: 100vw;
   }
 }
