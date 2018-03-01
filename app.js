@@ -8,7 +8,11 @@ angular.module("kevApp", ['ui.router'])
     .state("skills", {
         url: "/skills",
         templateUrl: "./public/skills.html"
-      });
+      })
+      .state("inquiry", {
+          url: "/inquiry",
+          templateUrl: "./public/inquiry.html"
+        });
 
         $urlRouterProvider.otherwise('welcome');
 
